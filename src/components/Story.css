@@ -1,0 +1,24 @@
+.square{
+    position: relative;
+    width: 28vw;
+    height: auto;
+    border-radius: 2%;
+    border-top: #ff6600, 30px solid;
+    padding: 18px;
+    background: #f6f6ef;
+}
+
+.text{
+    line-height: 25px;
+    color: rgb(57 57 57);
+}
+
+.post-cont{
+    display: grid;
+    grid-template-columns: repeat(1, 20vw);
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    height: -10vh;
+    margin-top: 150px;
+}

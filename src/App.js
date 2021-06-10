@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
 
-      <h2>Hacker app </h2>
+      <h2>Hacker News </h2>
       <ContainerStories />
     </div>
   );

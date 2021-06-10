@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getStory } from '../services/hackerNewsService'
+import './Story.css'
 
 export const Story = ({storyId}) => {
     const [story, setStory] = useState({});
@@ -8,17 +9,29 @@ export const Story = ({storyId}) => {
         getStory(storyId).then(data => data && data.url && setStory(data));
     }, []);
 
-    return story && story.url ? (
-
-        <div>
-
-        <a href={story.url}>
-        
-        <p>{story.title}</p>
-        
-        </a>
     
+
+    return (
+        <div className="post-cont">
+        {story && story.url ? (
+
+            <div className="square">
     
-        </div>
-    ) : null;
+            <a href={story.url}>
+            
+            <p className="text">{story.title}</p>
+            
+            </a>
+        
+        
+            </div>
+
+        ) : null}
+
+
+        </div>      
+
+    )
+
+    
 }
